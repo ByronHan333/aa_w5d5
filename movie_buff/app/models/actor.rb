@@ -9,7 +9,7 @@
 #
 class Actor < ApplicationRecord
   validates :name, presence: true
-  
+
   has_many :castings,
     class_name: :Casting,
     foreign_key: :actor_id,
